@@ -13,6 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
 package main
 
 import (
@@ -21,6 +22,7 @@ import (
 	"os"
 
 	"github.com/cloudfoundry-community/go-cfclient"
+	"github.com/jghiloni/cf-apptree/apptree"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 
@@ -51,7 +53,10 @@ func main() {
 		os.Exit(1)
 	}
 
-	appTree := ListFoundation(cfClient)
+	appTree, err := apptree.ListFoundation(cfClient)
+	if err != nil {
+		os.Exit(1)
+	}
 
 	var resp []byte
 	var jsonError error

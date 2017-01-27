@@ -13,7 +13,8 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package main
+
+package apptree
 
 import (
 	"encoding/json"
@@ -52,12 +53,15 @@ type Foundation struct {
 	Orgs []Org `json:"orgs"`
 }
 
+// DefaultFoundation - The nil value of Foundation
+var DefaultFoundation = Foundation{}
+
 // ListFoundation - Get all orgs, spaces, and apps
-func ListFoundation(cfClient *cfclient.Client) Foundation {
+func ListFoundation(cfClient *cfclient.Client) (Foundation, error) {
 	orgs, err := cfClient.ListOrgs()
 	if err != nil {
 		fmt.Fprintf(os.Stderr, "Error fetching orgs: %v\n", err)
-		os.Exit(1)
+		return DefaultFoundation, err
 	}
 
 	treeOrgs := make([]Org, 0, len(orgs))
@@ -72,7 +76,7 @@ func ListFoundation(cfClient *cfclient.Client) Foundation {
 		cfspaces, getSpaceErr := cfClient.OrgSpaces(treeOrg.GUID)
 		if getSpaceErr != nil {
 			fmt.Fprintf(os.Stderr, "Error fetching spaces for org %s: %v\n", treeOrg.Name, getSpaceErr)
-			os.Exit(1)
+			return DefaultFoundation, getSpaceErr
 		}
 
 		orgSpaces := make([]Space, 0, len(cfspaces))
@@ -87,7 +91,7 @@ func ListFoundation(cfClient *cfclient.Client) Foundation {
 			cfapps, getAppErr := listAppsBySpace(cfClient, cfspace.Guid)
 			if getAppErr != nil {
 				fmt.Fprintf(os.Stderr, "Error fetching spaces for space %s: %v\n", treeSpace.Name, getAppErr)
-				os.Exit(1)
+				return DefaultFoundation, getAppErr
 			}
 
 			spaceApps := make([]Application, 0, len(cfapps))
@@ -112,7 +116,7 @@ func ListFoundation(cfClient *cfclient.Client) Foundation {
 
 	return Foundation{
 		Orgs: treeOrgs,
-	}
+	}, nil
 }
 
 // adapted from cfclient.ListApps

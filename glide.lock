@@ -1,5 +1,5 @@
-hash: ef4c6989371158a1db9b70b52d1becc367dee7b400d0e887e737d0cbc4e8def1
-updated: 2017-01-26T13:43:28.164035828-07:00
+hash: 40f4d0ae6b284588f66ed55600f90718f95bb2365c289511ba8f53c87a6e5dfc
+updated: 2017-01-26T14:12:54.410938698-07:00
 imports:
 - name: github.com/alecthomas/template
   version: b867cc6ab45cece8143cfcc6fc9c77cf3f2c23c0
@@ -8,7 +8,7 @@ imports:
 - name: github.com/alecthomas/units
   version: 6b4e7dc5e3143b85ea77909c72caf89416fc2915
 - name: github.com/cloudfoundry-community/go-cfclient
-  version: 113da20ed641ca3d56d09feec2ee37bda591f820
+  version: 4d1aa29817124df30cec291fbe4ef560bb6e3a06
 - name: github.com/golang/protobuf
   version: 0c1f6d65b5a189c2250d10e71a5506f06f9fa0a0
   subpackages:
@@ -33,4 +33,34 @@ imports:
   - urlfetch
 - name: gopkg.in/alecthomas/kingpin.v2
   version: e9044be3ab2a8e11d4e1f418d12f0790d57e8d70
-testImports: []
+testImports:
+- name: github.com/onsi/ginkgo
+  version: 462326b1628e124b23f42e87a8f2750e3c4e2d24
+  subpackages:
+  - config
+  - internal/codelocation
+  - internal/containernode
+  - internal/failer
+  - internal/leafnodes
+  - internal/remote
+  - internal/spec
+  - internal/specrunner
+  - internal/suite
+  - internal/testingtproxy
+  - internal/writer
+  - reporters
+  - reporters/stenographer
+  - types
+- name: github.com/onsi/gomega
+  version: a78ae492d53aad5a7a232d0d0462c14c400e3ee7
+  subpackages:
+  - format
+  - internal/assertion
+  - internal/asyncassertion
+  - internal/testingtsupport
+  - matchers
+  - matchers/support/goraph/bipartitegraph
+  - matchers/support/goraph/edge
+  - matchers/support/goraph/node
+  - matchers/support/goraph/util
+  - types

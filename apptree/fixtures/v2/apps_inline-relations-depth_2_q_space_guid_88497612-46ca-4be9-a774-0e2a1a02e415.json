@@ -1,0 +1,323 @@
+{
+   "total_results": 1,
+   "total_pages": 1,
+   "prev_url": null,
+   "next_url": null,
+   "resources": [
+      {
+         "metadata": {
+            "guid": "382cf576-fd00-43de-85bb-fefb56589bde",
+            "url": "/v2/apps/382cf576-fd00-43de-85bb-fefb56589bde",
+            "created_at": "2017-01-17T22:06:34Z",
+            "updated_at": "2017-01-18T18:05:14Z"
+         },
+         "entity": {
+            "name": "azure-service-broker-1.2.0",
+            "production": false,
+            "space_guid": "88497612-46ca-4be9-a774-0e2a1a02e415",
+            "stack_guid": "6813e3ab-66f5-4048-b00c-ebf538f0062f",
+            "buildpack": "https://github.com/cloudfoundry/nodejs-buildpack",
+            "detected_buildpack": "",
+            "detected_buildpack_guid": null,
+            "environment_json": {
+               "AZURE_BROKER_DATABASE_ENCRYPTION_KEY": "ecsteam-labc-azure-service-brokr",
+               "AZURE_BROKER_DATABASE_NAME": "ecs-azure-svc-broker-db",
+               "AZURE_BROKER_DATABASE_PASSWORD": "Welcome1",
+               "AZURE_BROKER_DATABASE_PROVIDER": "sqlserver",
+               "AZURE_BROKER_DATABASE_SERVER": "ecsteam-labc-sqlserver.database.windows.net",
+               "AZURE_BROKER_DATABASE_USER": "labc-admin",
+               "CC_HOST": "https://api.system.labd.ecsteam.io",
+               "CF_ORG": "system",
+               "CF_SPACE": "azure-service-broker-space",
+               "CF_TARGET": "https://api.system.labd.ecsteam.io",
+               "CLIENT_ID": "2c7dd40f-d579-47b8-997d-823a64e8d0f3",
+               "CLIENT_SECRET": "Eo6JbDyThLoWgFeA2YmA2g",
+               "ENVIRONMENT": "AzureCloud",
+               "LOGIN_HOST": "https://login.system.labd.ecsteam.io",
+               "ROOT": "$HOME",
+               "SCHEME": "https",
+               "SECURITY_USER_NAME": "0c1246c3351a98ed",
+               "SECURITY_USER_PASSWORD": "QepxD_fWxjs6xiGnIgvvp6OaQkGDBqO9",
+               "SUBSCRIPTION_ID": "2c4abd34-0cef-4c27-b897-ccfe4ac01f56",
+               "TENANT_ID": "9b302424-05e4-41e2-a4d1-cc75864f720f",
+               "UAA_HOST": "https://uaa.system.labd.ecsteam.io",
+               "VERIFY_SSL": "true"
+            },
+            "memory": 1024,
+            "instances": 1,
+            "disk_quota": 1024,
+            "state": "STARTED",
+            "version": "f2654c8f-2be8-4809-baaf-f2a6bebd8700",
+            "command": null,
+            "console": false,
+            "debug": null,
+            "staging_task_id": "b791cc5348d5413c801169734007cdce",
+            "package_state": "STAGED",
+            "health_check_type": "port",
+            "health_check_timeout": null,
+            "staging_failed_reason": null,
+            "staging_failed_description": null,
+            "diego": true,
+            "docker_image": null,
+            "package_updated_at": "2017-01-18T18:04:36Z",
+            "detected_start_command": "npm start",
+            "enable_ssh": true,
+            "docker_credentials_json": {
+               "redacted_message": "[PRIVATE DATA HIDDEN]"
+            },
+            "ports": [
+               8080
+            ],
+            "space_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415",
+            "space": {
+               "metadata": {
+                  "guid": "88497612-46ca-4be9-a774-0e2a1a02e415",
+                  "url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415",
+                  "created_at": "2017-01-17T22:06:30Z",
+                  "updated_at": null
+               },
+               "entity": {
+                  "name": "azure-service-broker-space",
+                  "organization_guid": "518aca77-cd79-4eec-a3ab-740511b14e75",
+                  "space_quota_definition_guid": null,
+                  "allow_ssh": true,
+                  "organization_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75",
+                  "organization": {
+                     "metadata": {
+                        "guid": "518aca77-cd79-4eec-a3ab-740511b14e75",
+                        "url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75",
+                        "created_at": "2017-01-10T18:28:23Z",
+                        "updated_at": "2017-01-17T20:17:22Z"
+                     },
+                     "entity": {
+                        "name": "system",
+                        "billing_enabled": false,
+                        "quota_definition_guid": "15439296-df76-4763-8051-88bd46ad1e69",
+                        "status": "active",
+                        "quota_definition_url": "/v2/quota_definitions/15439296-df76-4763-8051-88bd46ad1e69",
+                        "spaces_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/spaces",
+                        "domains_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/domains",
+                        "private_domains_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/private_domains",
+                        "users_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/users",
+                        "managers_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/managers",
+                        "billing_managers_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/billing_managers",
+                        "auditors_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/auditors",
+                        "app_events_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/app_events",
+                        "space_quota_definitions_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75/space_quota_definitions"
+                     }
+                  },
+                  "developers_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/developers",
+                  "developers": [
+                     {
+                        "metadata": {
+                           "guid": "2833f614-1af4-4bf3-a57b-d85778e48261",
+                           "url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261",
+                           "created_at": "2017-01-10T23:55:55Z",
+                           "updated_at": null
+                        },
+                        "entity": {
+                           "admin": false,
+                           "active": true,
+                           "default_space_guid": null,
+                           "spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/spaces",
+                           "organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/organizations",
+                           "managed_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/managed_organizations",
+                           "billing_managed_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/billing_managed_organizations",
+                           "audited_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/audited_organizations",
+                           "managed_spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/managed_spaces",
+                           "audited_spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/audited_spaces"
+                        }
+                     }
+                  ],
+                  "managers_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/managers",
+                  "managers": [
+                     {
+                        "metadata": {
+                           "guid": "2833f614-1af4-4bf3-a57b-d85778e48261",
+                           "url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261",
+                           "created_at": "2017-01-10T23:55:55Z",
+                           "updated_at": null
+                        },
+                        "entity": {
+                           "admin": false,
+                           "active": true,
+                           "default_space_guid": null,
+                           "spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/spaces",
+                           "organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/organizations",
+                           "managed_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/managed_organizations",
+                           "billing_managed_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/billing_managed_organizations",
+                           "audited_organizations_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/audited_organizations",
+                           "managed_spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/managed_spaces",
+                           "audited_spaces_url": "/v2/users/2833f614-1af4-4bf3-a57b-d85778e48261/audited_spaces"
+                        }
+                     }
+                  ],
+                  "auditors_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/auditors",
+                  "auditors": [],
+                  "apps_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/apps",
+                  "routes_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/routes",
+                  "routes": [
+                     {
+                        "metadata": {
+                           "guid": "f21e0e96-b0e0-4994-9a38-6fdb0e27f654",
+                           "url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654",
+                           "created_at": "2017-01-17T22:06:35Z",
+                           "updated_at": null
+                        },
+                        "entity": {
+                           "host": "azure-service-broker",
+                           "path": "",
+                           "domain_guid": "f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "space_guid": "88497612-46ca-4be9-a774-0e2a1a02e415",
+                           "service_instance_guid": null,
+                           "port": null,
+                           "domain_url": "/v2/shared_domains/f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "space_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415",
+                           "apps_url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654/apps",
+                           "route_mappings_url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654/route_mappings"
+                        }
+                     }
+                  ],
+                  "domains_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/domains",
+                  "domains": [
+                     {
+                        "metadata": {
+                           "guid": "f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "url": "/v2/shared_domains/f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "created_at": "2017-01-10T18:28:24Z",
+                           "updated_at": "2017-01-11T16:33:26Z"
+                        },
+                        "entity": {
+                           "name": "apps.labd.ecsteam.io",
+                           "router_group_guid": null,
+                           "router_group_type": null
+                        }
+                     },
+                     {
+                        "metadata": {
+                           "guid": "4ddf1925-07a7-4c68-9db9-dd09f45ae877",
+                           "url": "/v2/private_domains/4ddf1925-07a7-4c68-9db9-dd09f45ae877",
+                           "created_at": "2017-01-10T18:28:24Z",
+                           "updated_at": null
+                        },
+                        "entity": {
+                           "name": "system.labd.ecsteam.io",
+                           "owning_organization_guid": "518aca77-cd79-4eec-a3ab-740511b14e75",
+                           "owning_organization_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75",
+                           "spaces_url": "/v2/domains/4ddf1925-07a7-4c68-9db9-dd09f45ae877/spaces"
+                        }
+                     }
+                  ],
+                  "service_instances_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/service_instances",
+                  "service_instances": [],
+                  "app_events_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/app_events",
+                  "events_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/events",
+                  "security_groups_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/security_groups",
+                  "security_groups": [
+                     {
+                        "metadata": {
+                           "guid": "36c77118-50ce-4682-a22a-580ddfbd26b0",
+                           "url": "/v2/security_groups/36c77118-50ce-4682-a22a-580ddfbd26b0",
+                           "created_at": "2017-01-25T21:08:28Z",
+                           "updated_at": "2017-01-25T21:08:38Z"
+                        },
+                        "entity": {
+                           "name": "superbad",
+                           "rules": [
+                              {
+                                 "description": "Just allow lab talk.",
+                                 "destination": "172.28.7.0/23",
+                                 "log": true,
+                                 "protocol": "all"
+                              }
+                           ],
+                           "running_default": true,
+                           "staging_default": false,
+                           "spaces_url": "/v2/security_groups/36c77118-50ce-4682-a22a-580ddfbd26b0/spaces"
+                        }
+                     }
+                  ]
+               }
+            },
+            "stack_url": "/v2/stacks/6813e3ab-66f5-4048-b00c-ebf538f0062f",
+            "stack": {
+               "metadata": {
+                  "guid": "6813e3ab-66f5-4048-b00c-ebf538f0062f",
+                  "url": "/v2/stacks/6813e3ab-66f5-4048-b00c-ebf538f0062f",
+                  "created_at": "2017-01-10T18:28:23Z",
+                  "updated_at": null
+               },
+               "entity": {
+                  "name": "cflinuxfs2",
+                  "description": "Cloud Foundry Linux-based filesystem"
+               }
+            },
+            "routes_url": "/v2/apps/382cf576-fd00-43de-85bb-fefb56589bde/routes",
+            "routes": [
+               {
+                  "metadata": {
+                     "guid": "f21e0e96-b0e0-4994-9a38-6fdb0e27f654",
+                     "url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654",
+                     "created_at": "2017-01-17T22:06:35Z",
+                     "updated_at": null
+                  },
+                  "entity": {
+                     "host": "azure-service-broker",
+                     "path": "",
+                     "domain_guid": "f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                     "space_guid": "88497612-46ca-4be9-a774-0e2a1a02e415",
+                     "service_instance_guid": null,
+                     "port": null,
+                     "domain_url": "/v2/shared_domains/f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                     "domain": {
+                        "metadata": {
+                           "guid": "f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "url": "/v2/shared_domains/f67a01bd-7bbc-4268-8eb2-a1c8364eeba3",
+                           "created_at": "2017-01-10T18:28:24Z",
+                           "updated_at": "2017-01-11T16:33:26Z"
+                        },
+                        "entity": {
+                           "name": "apps.labd.ecsteam.io",
+                           "router_group_guid": null,
+                           "router_group_type": null
+                        }
+                     },
+                     "space_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415",
+                     "space": {
+                        "metadata": {
+                           "guid": "88497612-46ca-4be9-a774-0e2a1a02e415",
+                           "url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415",
+                           "created_at": "2017-01-17T22:06:30Z",
+                           "updated_at": null
+                        },
+                        "entity": {
+                           "name": "azure-service-broker-space",
+                           "organization_guid": "518aca77-cd79-4eec-a3ab-740511b14e75",
+                           "space_quota_definition_guid": null,
+                           "allow_ssh": true,
+                           "organization_url": "/v2/organizations/518aca77-cd79-4eec-a3ab-740511b14e75",
+                           "developers_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/developers",
+                           "managers_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/managers",
+                           "auditors_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/auditors",
+                           "apps_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/apps",
+                           "routes_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/routes",
+                           "domains_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/domains",
+                           "service_instances_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/service_instances",
+                           "app_events_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/app_events",
+                           "events_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/events",
+                           "security_groups_url": "/v2/spaces/88497612-46ca-4be9-a774-0e2a1a02e415/security_groups"
+                        }
+                     },
+                     "apps_url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654/apps",
+                     "route_mappings_url": "/v2/routes/f21e0e96-b0e0-4994-9a38-6fdb0e27f654/route_mappings"
+                  }
+               }
+            ],
+            "events_url": "/v2/apps/382cf576-fd00-43de-85bb-fefb56589bde/events",
+            "service_bindings_url": "/v2/apps/382cf576-fd00-43de-85bb-fefb56589bde/service_bindings",
+            "service_bindings": [],
+            "route_mappings_url": "/v2/apps/382cf576-fd00-43de-85bb-fefb56589bde/route_mappings"
+         }
+      }
+   ]
+}
