@@ -1,0 +1,42 @@
+---
+resources:
+- name: source
+  type: git
+  source:
+    uri: git@github.com:jghiloni/cf-apptree.git
+    branch: master
+    private_key: {{github-private-key}}
+- name: version
+  type: semver
+  source:
+    driver: git
+    uri: git@github.com:jghiloni/cf-apptree.git
+    branch: version
+    private_key: {{github-private-key}}
+    file: version
+    initial_version: 1.0.0
+- name: release
+  type: github-release
+  source:
+    user: jghiloni
+    repository: cf-apptree
+    access_token: {{github-access-token}}
+jobs:
+- name: test-and-build
+  plan:
+  - get: source
+    trigger: true
+  - get: version
+  - task: test
+    file: source/ci/tasks/do-test.yml
+  - task: build
+    file: source/ci/tasks/do-build.yml
+  - put: release
+    params:
+      name: version/number
+      tag: version/number
+      prefix: v
+      globs:
+      - build-output/build/*
+  - put: version
+    params: { file: version/number, bump: patch }
