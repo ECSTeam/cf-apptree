@@ -3,14 +3,14 @@ resources:
 - name: source
   type: git
   source:
-    uri: git@github.com:jghiloni/cf-apptree.git
+    uri: git@github.com:ecsteam/cf-apptree.git
     branch: master
     private_key: {{github-private-key}}
 - name: version
   type: semver
   source:
     driver: git
-    uri: git@github.com:jghiloni/cf-apptree.git
+    uri: git@github.com:ecsteam/cf-apptree.git
     branch: version
     private_key: {{github-private-key}}
     file: version
@@ -18,7 +18,7 @@ resources:
 - name: release
   type: github-release
   source:
-    user: jghiloni
+    user: ecsteam
     repository: cf-apptree
     access_token: {{github-access-token}}
 jobs:

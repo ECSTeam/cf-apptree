@@ -11,4 +11,4 @@ outputs:
 - name: build-output/build
 
 run:
-  path: gopath-tested/src/github.com/jghiloni/cf-apptree/ci/tasks/do-build.sh
+  path: gopath-tested/src/github.com/ecsteam/cf-apptree/ci/tasks/do-build.sh
