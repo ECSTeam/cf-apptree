@@ -1,5 +1,5 @@
 #!/bin/sh
-basedir=`pwd`/gopath/src/github.com/jghiloni/cf-apptree
+basedir=`pwd`/gopath/src/github.com/ecsteam/cf-apptree
 outdir=`pwd`/gopath-tested
 
 mkdir -p ${outdir} > /dev/null 2>&1
