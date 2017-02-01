@@ -22,7 +22,7 @@ import (
 	"os"
 
 	"github.com/cloudfoundry-community/go-cfclient"
-	"github.com/jghiloni/cf-apptree/apptree"
+	"github.com/ecsteam/cf-apptree/apptree"
 	"gopkg.in/alecthomas/kingpin.v2"
 )
 

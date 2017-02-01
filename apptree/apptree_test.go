@@ -17,7 +17,7 @@
 package apptree_test
 
 import (
-	. "github.com/jghiloni/cf-apptree/apptree"
+	. "github.com/ecsteam/cf-apptree/apptree"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 

@@ -1,4 +1,4 @@
-package: github.com/jghiloni/cf-apptree
+package: github.com/ecsteam/cf-apptree
 import:
 - package: github.com/cloudfoundry-community/go-cfclient
 - package: gopkg.in/alecthomas/kingpin.v2
